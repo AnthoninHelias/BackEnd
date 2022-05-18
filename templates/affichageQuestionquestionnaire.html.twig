@@ -1,0 +1,22 @@
+{% include "href.html.twig" %}
+{% include "insertQuestionquestionnaire.html.twig" %}
+{% block block %}
+    <div class="block">
+        <hr>
+        <br>
+        <h1>Liste des questions par questionnaire :</h1>
+        <br>
+        <table>
+            <tr>
+                <th>Id Questionnaire</th>
+                <th>Id Question</th>
+            </tr>
+            {% for value in questionquestionnaire %}
+                <tr>
+                    <td>{{ value.getIdQuestionnaire }}</td>
+                    <td>{{ value.getIdQuestion }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

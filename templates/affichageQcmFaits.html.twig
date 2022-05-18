@@ -1,0 +1,20 @@
+{% include "href.html.twig" %}
+<div class="block">
+<h1>{{ 'Liste des Qcm finis' }}</h1>
+<table>
+    <tr>
+        <th>Id Etudiant</th>
+        <th>Id Questionnaire</th>
+        <th>Date</th>
+        <th>Score</th>
+    </tr>
+    {% for machin in qcmFaits %}
+        <tr>
+            <td>{{ machin.idEtudiant }}</td>
+            <td>{{ machin.idQuestionnaire }}</td>
+            <td>{{ machin.dateFait }}</td>
+            <td>{{ machin.point }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</div>

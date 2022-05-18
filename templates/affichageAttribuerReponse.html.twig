@@ -1,0 +1,26 @@
+{% include "href.html.twig" %}
+{% include "insertQuestionreponse.html.twig" %}
+{% block block %}
+    <div class="block">
+        <br>
+        <h1>Liste des reponses par question :</h1>
+        <br>
+        <table>
+            <tr>
+                <th>Id Question</th>
+                <th>Id Réponse</th>
+                <th>Ordre</th>
+                <th>Bonne Réponse</th>
+            </tr>
+            {% for value in questionreponse %}
+                <tr>
+                    <td>{{ value.getIdQuestion }}</td>
+                    <td>{{ value.getIdReponse }}</td>
+                    <td>{{ value.getOrdre }}</td>
+                    <td>{{ value.getBonne }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
+

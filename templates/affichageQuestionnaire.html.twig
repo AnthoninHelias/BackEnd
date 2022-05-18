@@ -1,0 +1,6 @@
+{% include "href.html.twig" %}
+{% block block %}
+    <p>Questionnaire n°{{ questionnaire.getIdQuestionnaire }}:</p>
+    <p>{{ questionnaire.getLibelleQuestionnaire }}</p>
+    <a href="../questionnaires">Retour</a>
+{% endblock %}

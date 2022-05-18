@@ -1,0 +1,27 @@
+{% block block %}
+    <form action="questionreponse" method="post">
+        <div class="block">
+            <h1></h1>
+            <label>Associer une réponse à une question</label>
+            <h1></h1>
+            <label>Id Question</label>
+            <h1></h1>
+            <input type="number" name="idQuestion" required>
+            <h1></h1>
+            <label>Id Réponse</label>
+            <h1></h1>
+            <input type="number" name="idReponse" required>
+            <h1></h1>
+            <label>Numéroter la réponse (ordre)</label>
+            <h1></h1>
+            <input type="number" name="ordre" required>
+            <h1></h1>
+            <label>Bonne réponse (0:mauvaise,1:bonne)</label>
+            <h1></h1>
+            <input type="number" name="bonne" required>
+            <h1></h1>
+            <input type="submit" value="Ajouter/Associer">
+            <h1></h1>
+        </div>
+    </form>
+{% endblock %}

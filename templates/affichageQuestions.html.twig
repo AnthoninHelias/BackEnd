@@ -1,0 +1,25 @@
+{% include "href.html.twig" %}
+{% include "insertQuestion.html.twig" %}
+
+<div class="block">
+    <hr>
+    <h1></h1>
+    <h1>{{ 'Liste des questions' }}</h1>
+    <h1></h1>
+    <table>
+        <tr>
+            <th>Id Question</th>
+            <th>Libelle question</th>
+            <th>Nombre de réponses</th>
+            <th>Nombre de bonnes réponses</th>
+        </tr>
+        {% for value in questions %}
+            <tr>
+                <td>{{ value.idQuestion }}</td>
+                <td>{{ value.libelleQuestion }}</td>
+                <td>{{ value.nbReponse }}</td>
+                <td>{{ value.nbBonneReponse }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>

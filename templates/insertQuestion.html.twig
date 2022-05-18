@@ -1,0 +1,23 @@
+{% block block %}
+<form action="questions" method="post">
+    <div class="block">
+        <h1></h1>
+        <label>Ajouter une question</label>
+        <h1></h1>>
+        <label>Libellé question</label>
+        <h1></h1>
+        <input type="text" name="libelleQuestion" required>
+        <h1></h1>
+        <label>Nombre de réponses</label>
+        <h1></h1>
+        <input type="number" name="nbReponse" required>
+        <h1></h1>
+        <label>Nombre de bonnes réponses</label>
+        <h1></h1>
+        <input type="number" name="nbBonneReponse" required>
+        <h1></h1>
+        <input type="submit" value="Ajouter une question">
+        <h1></h1>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% include "href.html.twig" %}
+{% include "insertReponses.html.twig" %}
+
+<div class="content">
+    {% if add==true %}
+        <p>Succés de l'ajout de la réponse</p>
+    {% endif %}
+    <hr>
+    <br>
+    <h1>{{ 'Liste des réponses' }}</h1>
+    <br>
+    <table>
+        <tr>
+            <th>Id réponse</th>
+            <th>Valeur</th>
+        </tr>
+        {% for value in reponses %}
+            <tr>
+                <td>{{ value.idReponse }}</td>
+                <td>{{ value.valeur }}</td>
+            </tr>
+        {% endfor %}
+    </table>
